@@ -46,8 +46,8 @@ test: $(SRC) $(TEST_SRC)
 # 	gcov -a main1.c
 
 coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST_SRC) $(INC) -o $(BUILD_DIR)$(TEST_OUTPUT)
+	./$(BUILD_DIR)/$(TEST_OUTPUT)
 
 doc:
 	make -C doc
