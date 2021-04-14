@@ -9,6 +9,8 @@ SRC = src/contacts1.c
 TEST_SRC = test/test_contacts1.c\
 unity/unity.c
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
 INC = -I inc -I unity
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
@@ -38,10 +40,14 @@ test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-coverage:${PROJECT_NAME}
-	gcc main1.c -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a main1.c
+# coverage:${PROJECT_NAME}
+# 	gcc main1.c -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
+# 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+# 	gcov -a main1.c
+
+coverageCheck:$(BUILD)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 doc:
 	make -C doc
