@@ -9,7 +9,7 @@ SRC = src/contacts1.c
 TEST_SRC = test/test_contacts1.c\
 unity/unity.c
 
-TEST_OUTPUT = $(BUILD)/test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/test_$(PROJ_NAME).out
 
 INC = -I inc -I unity
 
