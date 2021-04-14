@@ -31,11 +31,11 @@ void test_searchContact(void)
 }
 
 
-void test_removeContact(void)
-{
-    char* ph = "467457";
-    TEST_ASSERT_EQUAL(0,removeContact(ph));
-}
+// void test_removeContact(void)
+// {
+//     char* ph = "467457";
+//     TEST_ASSERT_EQUAL(0,removeContact(ph));
+// }
 
 
 void test_retriveFromFile(void)
@@ -58,7 +58,7 @@ int main(void)
     RUN_TEST(test_displayContact);
     RUN_TEST(test_displayAllContacts);
     RUN_TEST(test_searchContact);
-    RUN_TEST(test_removeContact);
+    //RUN_TEST(test_removeContact);
     RUN_TEST(test_retriveFromFile);
     RUN_TEST(test_storeToFile);
 
