@@ -33,7 +33,8 @@ void test_searchContact(void)
 
 void test_removeContact(void)
 {
-    TEST_ASSERT_EQUAL(0,removeContact("996756"));
+    char* ph = "467457";
+    TEST_ASSERT_EQUAL(0,removeContact(ph));
 }
 
 
