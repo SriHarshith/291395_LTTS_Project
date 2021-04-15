@@ -271,7 +271,7 @@ int retriveFromFile()
     if((fp = fopen("Contact_Manager.txt", "r")) == NULL) 
     {
         printf("\nError: Cannot load the Contact Manager file\n");
-        return 0;
+        return 2;
     }
 
 
@@ -279,16 +279,17 @@ int retriveFromFile()
     if(fread(&presentSize, sizeof(presentSize), 1, fp) != 1) 
     {
         printf("\nError, Cannot read data\n");
-        return 0;
+        return 3;
     }
 
     /* read the actual phone book content */
     if(fread(contacts, sizeof(contacts), 1, fp) != 1) 
     {
         printf("\nError, Cannot read data\n");
-        return 0;
+        return 4;
     }
     fclose(fp);
+    return 5;
 
 }
 
@@ -299,23 +300,24 @@ int storeToFile()
     if( (fp = fopen("Contact_Manager.txt", "w")) == NULL ) 
     {
         printf("\nCannot create Contact Manager file\n");
-        return 0;
+        return 2;
     }
 
     /* Save the current size of the phonebook */
     if (fwrite(&presentSize, sizeof(presentSize), 1, fp) != 1 ) 
     {
         printf("\nCannot save the contact\n");
-        return 0;
+        return 3;
     }
 
     /* save the phonebook contents */
     if(fwrite(contacts, sizeof(contacts), 1, fp) != 1)
      {
         printf("\nCannot save the contact\n");
-        return 0;
+        return 4;
     }
 
     printf("\nContact Manager saved to file successfully! \n");
     fclose(fp);
+    return 5;
 }

@@ -49,6 +49,18 @@ coverageCheck:$(BUILD)
 	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST_SRC) $(INC) -o $(BUILD_DIR)$(TEST_OUTPUT)
 	./$(BUILD_DIR)/$(TEST_OUTPUT)
 
+# coverage:
+# 	cp test/test_contacts1.c .
+# 	gcc -fprofile-arcs -ftest-coverage $(INC) unity/unity.c test_contacts1.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
+# 	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
+# 	gcov -a $(COV_SRC)
+# 	$(RM) *.$(EXEC)
+# 	$(RM) *.gcda
+# 	$(RM) *.gcno
+# 	$(RM) *.c.gcov
+# 	$(RM) *.DAT
+# 	$(RM) test_contacts1.c
+
 doc:
 	make -C doc
 $(BUILD_DIR):
