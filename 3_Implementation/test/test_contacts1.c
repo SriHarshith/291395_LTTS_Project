@@ -40,13 +40,13 @@ void test_searchContact(void)
 
 void test_retriveFromFile(void)
 {
-    TEST_ASSERT_EQUAL(1,retriveFromFile());
+    TEST_ASSERT_EQUAL(0,retriveFromFile());
 }
 
 
 void test_storeToFile(void)
 {
-    TEST_ASSERT_EQUAL(1,storeToFile());
+    TEST_ASSERT_EQUAL(0,storeToFile());
 }
 
 int main(void)
