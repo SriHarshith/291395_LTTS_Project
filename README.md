@@ -17,14 +17,30 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`291395` | V.Sri Harshith  | F_01, F_02, F_03, F_04, F_05, F_06, F_07, F_08, F_09, F_10, F_11   | 2     | 1   |5  |5     
+   
+
+| Feature Id | Feature |
+| -----------|---------|
+|F_01| Option to load older saved data from file |
+|F_02| Save new data to file if only data is added |
+|F_03| Add Contacts |
+|F_04| Display All Contacts |
+|F_05| Search contact by first name  |
+|F_06| Search Contact by Last Name |
+|F_07| Search Contact by Phone Number |
+|F_08| Search Contact by Email Id |
+|F_09| Sort Contacts Alphabeticaly and display |
+|F_10| Save Data to a File |
+|F_11| Usage of dynamic memory allocation, files, structures and pointers |
 
 ## Challenges Faced and How Was It Overcome
+| No. | Challenge | Solution
+|-----|-----------|--------
+|1. | Implementation of SDLC and maaking UML diagrams | Exploring them and linking with the architechture of my project 
+|2. | Errors in opening and retriving file | Implemented File System correctly |
+|3. | issues in running test cases | specifying correct return values for functions
+|4. | Issues in workflows | filxed them by updating the correct file paths
 
-1. ABC
-2. BCD
-3. ...
-4. ...
