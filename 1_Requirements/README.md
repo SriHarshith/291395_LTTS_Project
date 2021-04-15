@@ -25,7 +25,7 @@ A contact manager is a software program that enables users to easily store and f
 
 ##  Defining our System
 
-![System Definition](https://photos.app.goo.gl/Cb9vpVvtAH7HBRcC7)
+![System Definition](https://github.com/SriHarshith/291395_LTTS_Project/blob/main/1_Requirements/Defining_the_system.png)
 
  Contacts Manager have features like:
  -  Add a new contact. 
@@ -36,7 +36,7 @@ A contact manager is a software program that enables users to easily store and f
  - Display contacts.
 
 ## SWOT Analysis
-![SWOT](https://photos.app.goo.gl/1F3UTfyq5qhMQm2Z7)
+![SWOT](https://github.com/SriHarshith/291395_LTTS_Project/blob/main/1_Requirements/SWOT.png)
 
 
 # 4 W's and 1 H
