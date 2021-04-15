@@ -1,10 +1,11 @@
-Contacts Manager
+# Contacts Manager
+
 
 # SDLC Activity Based Learning
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-[![C/C++ CI](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/c-cpp.yml) | [![Static Cppcheck](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/cppcheck.yml) [![Dynamic Valgrind](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/CodeQuality_Dynamic.yml)| [![Unity - Unit Testing](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/unity.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gitinspector.yml)
+[![C/C++ CI](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/c-cpp.yml) | [![Static Cppcheck](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/cppcheck.yml) [![Dynamic Valgrind](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/CodeQuality_Dynamic.yml) [![Code Coverage](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gcov.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gcov.yml) | [![Unity - Unit Testing](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/unity.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/SriHarshith/291395_LTTS_Project/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
