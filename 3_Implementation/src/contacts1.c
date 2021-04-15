@@ -271,7 +271,7 @@ int retriveFromFile()
     if((fp = fopen("Contact_Manager.txt", "r")) == NULL) 
     {
         printf("\nError: Cannot load the Contact Manager file\n");
-        return 2;
+        return 5;
     }
 
 
